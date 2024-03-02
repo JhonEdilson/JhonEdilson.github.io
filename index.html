@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My new Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+</head>
+<body >
+    <header class="header">
+        <nav class="nav">
+            <h1 class="titulo_nav">JE<span class="naranja">.</span></h1>
+            <div class="nav_div">
+                <ul class="menu">
+                    <li class="navitems"><a href="#inicio" class="navlinks">Inicio</a></li>
+                    <!-- <li class="navitems"><a href="" class="navlinks">Acerca de Mí</a></li> -->
+                    <li class="navitems"><a href="#habilidades" class="navlinks">Habilidades</a></li>
+                    <li class="navitems"><a href="#proyectos" class="navlinks">Proyectos</a></li>
+                    <li class="navitems"><a href="#contacto" class="navlinks">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="inicio" id="inicio">
+        <div class="presentacion">
+            <div class="titulos">
+                <div class="titulo">
+                    <h2>HOLA, SOY JHON EDILSON,<br> DESARROLLADOR WEB <span class="chocolate">JR</span>.</h2>
+                </div>
+                <ul class="presentacion-items">
+                    <li>Apasionado del conocimiento</li>
+                    <li>| <a href="">linkedin</a></li>
+                    <li>| <a href="">Github</a></li>
+                </ul>
+            </div>
+            <div class="imagen">
+                <div class="imagen-container"></div>
+            </div>
+            <div class="hablemos">
+                <button class="btn" onclick="location.href='https://github.com/JhonEdilson'">Ver Proyectos</button>
+                <a class="btn" href="https://wa.me/573228835597" target="_blank">Hablemos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobreMi">
+        <div class="contenido">
+            <h2>Sobre Mí</h2>
+            <div class="underline"></div>
+            <p>Desde muy temprana edad el mundo de la tecnología y los sistemas siempre me ha interesado, a medidad que he ido creciendo mi interés por esta ha ido aumentando sobre todo en el ámbito de la programación, quería construir lo que usaba, los juegos que jugaba, los programas que usaba. LLevo en este mundo poco tiempo y mi deseo de aprender y desarrolarme tanto personal como profesionalmente en este mundo no han disminuido, pienso que el deseo de aprender y salir adelante me convierte en un buen candidato para una organización.</p>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <div class="titulo-skill">
+            <h2>Habilidades</h2>
+            <p>Estas son mis habilidades</p>
+        </div>
+        <div class="skills">
+            <div class="card" onmouseover="mostrarTexto(this)" onmouseout="ocultarTexto(this)">
+                <div class="skill">
+                    <img src="images/html.png" alt="" >
+                    <h2>HTML y CSS</h2>
+                    <p class="parrafo-oculto">HTML Y CSS Nivel intermedio/avanzado.</p>
+                </div>
+            </div>
+            <div class="card" onmouseover="mostrarTexto(this)" onmouseout="ocultarTexto(this)">
+                <div class="skill">
+                    <img src="images/js.png" alt="">
+                    <h2>JavaScript</h2>
+                    <p class="parrafo-oculto">JavaScript nivel intermedio.</p>
+                </div>
+            </div>
+            <div class="card" onmouseover="mostrarTexto(this)" onmouseout="ocultarTexto(this)">
+                <div class="skill">
+                    <img src="images/github.png" alt="" >
+                    <h2>Git y Git Hub</h2>
+                    <p class="parrafo-oculto">Conocimiento básico de git y github.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="container" id="proyectos">
+            <!-- title -->
+            <div class="title">
+                <h2>Proyectos</h2>
+                <div class="underline"></div>
+            </div>
+            <!-- review -->
+            <article class="review">
+                <h4 id="author">Página Comida</h4>
+                <p id="tecnologias">HTML - CSS - JAVASCRIPT</p>
+                <p id="info">
+                    Página web gourmet sobre alitas, diseño funcional y elegante
+                </p>
+                <a href="Proyectos/PaginaComida/index.html" target="_blank" id="link-review">Ver Proyecto</a>
+                <!-- prev next buttons-->
+                <div class="button-container">
+                    <button class="prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <button class="random-btn" onclick="location.href='https://github.com/JhonEdilson'">Ver más Proyectos</button>
+            </article>
+        </section>
+    </main>
+
+    <div class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <div class="contacto-items">
+            <!-- Iconos -->
+            <div class="item">
+                <a href="https://wa.me/573228835597" class="link-item" target="_blank">
+                    <li class="whatssapp"></li>
+                </a>
+                <p>322 883 5597</p>
+            </div>
+            <div class="item">
+                <a href="https://github.com/JhonEdilson"    class="link-item" target="_blank">
+                    <li class="github"></li>
+                </a>
+                <p>@JhonEdilson</p>
+            </div>
+            <div class="item">
+                <a href="#" class="link-item">
+                    <li class="correo"></li>
+                </a>
+                <p>jhon.vanegas.506<br>@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
